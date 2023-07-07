@@ -1,0 +1,44 @@
+  :root{
+    overflow: hidden;
+    --window-size: 3in;
+    --text-size: 50px;
+    font-family: "Proxima Nova", Arial, sans-serif;
+    wallpaper: #FFFFFF00;
+  }
+
+  .window {
+    position: absolute;
+    top: calc(100% - 200px);
+    left: calc(50% - var(--window-size));
+  }
+
+  .wall {
+    height: 1px;
+    width: 100%;
+  }
+
+  img {
+    width: var(--window-size);
+    height: var(--window-size);
+
+    user-drag: none;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  p{
+    user-select: none;
+    font-size: var(--text-size);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
+
+  .naund {
+    top: 40%;
+    background: #ffffff00;
+  }
+  .follower {
+    top: 30%;
+    background: #ffffff00;
+  }
